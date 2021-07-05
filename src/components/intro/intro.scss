@@ -1,0 +1,45 @@
+.intro{
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+    justify-content: center;
+    h1 {
+        font-size: 100px;
+        font-weight: 900;    
+        padding-bottom: 40px;
+    }
+    h2 {
+        font-size: 40px;
+        font-weight: 800;
+        margin-left: 5px;
+        padding-bottom: 40px;
+    }
+
+    h3 {
+        color: #5271ff;
+        font: bolder;
+        font-size: 40px;
+        font-weight: 600;
+        padding-top: 20px;
+    }
+
+    img {
+        transform: scale(0.1);
+        position: absolute;
+        bottom: -200px;
+        left: 37%;
+        animation: arrowBlink 2s infinite;
+        &:hover {
+            transform: scale(0.11);
+            opacity: 50%;
+        }
+    }
+    @keyframes arrowBlink {
+        100%{
+            opacity: 0;
+        }
+    }
+        
+}
